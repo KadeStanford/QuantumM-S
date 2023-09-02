@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import Map from "@/pages/components/Map.js";
+import Map from "@/pages/api/Map.js";
 import axios from "axios";
 
 const inter = Inter({ subsets: ["latin"] });
