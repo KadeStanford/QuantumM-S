@@ -121,7 +121,7 @@ function MailAndShipPage() {
             <li>Friendly Service</li>
             <li>Competitive Rates</li>
             <li>Comparison rates</li>
-            <li>We're more than just a shipping location...</li>
+            <li>We'&#39;re more than just a shipping location...</li>
           </ul>
           <div className={styles.mailPageServicesContainer}>
             <div className={styles.mailPageServicesBox}>
