@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap");
 
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #733b8f;
+}
+
 .topContainer {
   display: flex;
   flex-direction: column;
@@ -10,6 +21,7 @@
   font-size: 1.5rem;
   text-align: center;
   padding: 0 1rem;
+  width: 93%;
   background-color: #733b8f;
 }
 
@@ -328,11 +340,50 @@
   border-radius: 50%;
 }
 
-.logoSubtext {
-  -webkit-text-stroke: 1px #000000;
-}
-
 @media screen and (max-width: 768px) {
+  .navButton {
+    font-size: calc(0.7rem + 0.5vw);
+    width: 40%;
+  }
+
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .topContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 1rem;
+    background-color: #733b8f;
+  }
+
+  .logoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    font-family: "Roboto Slab", serif;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0 1rem;
+    color: aliceblue;
+    background-color: #5e2c77;
+    width: 100%;
+    border-radius: 10px;
+  }
+
   .homePageContainer {
     display: flex;
     flex-direction: row;
@@ -367,13 +418,13 @@
     align-items: center;
     justify-content: center;
     font-family: "Roboto Slab", serif;
-    font-size: 1.1rem;
     text-align: center;
   }
   .homePageTitle {
     text-align: center;
     padding: 0 1rem;
     width: 100%;
+    font-size: calc(1rem + 0.5vw);
   }
   .homePageText {
     font-size: 0.9rem;
@@ -422,8 +473,7 @@
   }
 
   .logoSubtext {
-    -webkit-text-stroke: 1px #000000;
-    font-size: 1.5rem;
+    font-size: calc(1rem + 0.5vw);
   }
 
   .homePageContactForm {
