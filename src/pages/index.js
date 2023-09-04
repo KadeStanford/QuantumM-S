@@ -13,8 +13,9 @@ function HomePage() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const handleSubmit = async (e) => {
+    e.preventDefault();
     try {
-      await axios.post("/api/contact", { name, email, message });
+      await axios.post("/api/Contact", { name, email, message });
       alert("Message sent successfully");
     } catch (error) {
       alert("Failed to send message. Please try again later.");
@@ -56,7 +57,10 @@ function HomePage() {
           </div>
         </div>
 
-        <Map address="7353 Highland Road Suite B, Baton Rouge, Louisiana 70808 United States" />
+        <Map
+          className={styles.mapComponent}
+          address="7353 Highland Road Suite B, Baton Rouge, Louisiana 70808 United States"
+        />
       </div>
       <div className={styles.homePageContactForm}>
         <h1 className={styles.contactTitle}>Contact Us</h1>

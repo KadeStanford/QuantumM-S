@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import loader from "@/pages/api/googleMapsLoader";
+import styles from "@/styles/Home.module.css";
 
 const Map = ({ address }) => {
   const [map, setMap] = useState(null);
@@ -31,7 +32,7 @@ const Map = ({ address }) => {
   return (
     <div
       id="map"
-      style={{ height: "40vh", width: "40%", border: "#733b8f solid 5px" }}
+      style={{ height: "40vh", width: "60vw", border: "#733b8f solid 5px" }}
     ></div>
   );
 };
